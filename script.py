@@ -30,7 +30,7 @@ with open("./style.css") as css:
 def load_data():
     path = "data/data.csv.zip"
     if not os.path.isfile(path):
-        path = "https://github.com/amirsoleix/traffic-counter-app/blob/master/data/data.csv.zip"
+        path = "https://github.com/Leili-M/Traffic-Counter-Project/blob/main/data/data.csv.zip"
 
     data = pd.read_csv(
         path,
@@ -58,7 +58,7 @@ def load_data():
 def load_coordinates():
     path = "data/coordinates.csv.zip"
     if not os.path.isfile(path):
-        path = "https://github.com/amirsoleix/traffic-counter-app/blob/master/data/coordinates.csv.zip"
+        path = "https://github.com/Leili-M/Traffic-Counter-Project/blob/main/data/coordinates.csv.zip"
 
     coordinates = pd.read_csv(
         path,
@@ -77,7 +77,7 @@ def load_coordinates():
 def load_test():
     path = "data/hypothesis-test.csv"
     if not os.path.isfile(path):
-        path = "https://github.com/amirsoleix/traffic-counter-app/blob/master/data/hypothesis-test.csv"
+        path = "https://github.com/Leili-M/Traffic-Counter-Project/blob/main/data/hypothesis-test.csv"
 
     coordinates = pd.read_csv(
         path,
@@ -95,7 +95,7 @@ def load_test():
 def load_population():
     path = "data/population.csv.zip"
     if not os.path.isfile(path):
-        path = "https://github.com/amirsoleix/traffic-counter-app/blob/master/data/population.csv.zip"
+        path = "https://github.com/Leili-M/Traffic-Counter-Project/blob/main/data/population.csv.zip"
     
     population = pd.read_csv(
         path,
@@ -569,7 +569,7 @@ script_path = os.path.dirname(script_path)
 if not os.path.exists(os.path.join(os.path.dirname(script_path), 'graph-data')):
     os.makedirs(os.path.join(os.path.dirname(script_path), 'graph-data'))
     # Unzip the graph-data.zip file
-    with zipfile.ZipFile("https://github.com/amirsoleix/traffic-counter-app/blob/master/graph-data.zip", 'r') as zip_ref:
+    with zipfile.ZipFile("https://github.com/Leili-M/Traffic-Counter-Project/blob/main/data/graph-data.zip", 'r') as zip_ref:
         zip_ref.extractall(os.path.join(os.path.dirname(script_path), 'graph-data'))
 st.write("""
 گراف محورهای تردد که با افزایش ابعاد می‌توانید میزان تردد در هر یک را مشاهده کنید.
